@@ -1,5 +1,8 @@
+// LINK OF CHALLENGE:
 // https://www.hackerrank.com/challenges/2d-array/problem?isFullScreen=true&h_r=next-challenge&h_v=zen
 
+
+// EXAMPLE ARRAYS
 arr1 = [
     [ 1, 1, 1, 0, 0, 0 ],
     [ 0, 1, 0, 0, 0, 0 ],
@@ -20,7 +23,7 @@ arr2 = [
 
 
 
-
+// SOLUTION 1
 function hourglassSum(arr) {
 
     function sumHourglass(x,y) {
@@ -47,9 +50,7 @@ function hourglassSum(arr) {
 }
 
 
-////////
-
-
+// SOLUTION 2
 function hourglassSum2(arr) {
 
     let sums = []
@@ -70,6 +71,10 @@ function hourglassSum2(arr) {
     return Math.max(...sums)
 }
 
+
+
+
+// 
 
 console.log(
 
