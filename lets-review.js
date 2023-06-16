@@ -1,3 +1,6 @@
+// Challenge link: https://www.hackerrank.com/challenges/30-review-loop/problem?isFullScreen=true
+
+
 const input1 = "2\nHacker\nRank"
 const input2 = "2 \nHacker \nRank \nHacker \nRank \nHacker \nRank \nHacker \nRank"
 const input3 = "2\nWilson\ntem\ncabelos\ndigitais"
