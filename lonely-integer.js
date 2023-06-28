@@ -15,10 +15,10 @@ function lonelyinteger(arr) {
     return unique;
 }
 
-// A BETTER SOLUTION THAT I STILL WANT TO UNDERSTAND
+// A BETTER SOLUTION USING REDUCER
 function lonelyintegerReduce(a) {
     
-    let sortedArray = a.sort((a,b)=> a -b);
+    let sortedArray = a.sort((a,b) => a - b);
     let unique = sortedArray.reduce((a,c)=>{
         return a^c
     });
