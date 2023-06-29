@@ -1,3 +1,4 @@
+// Link of Challenge: https://www.hackerrank.com/challenges/divisible-sum-pairs/problem?isFullScreen=true
 
 const case1 = {
     n: 6,
