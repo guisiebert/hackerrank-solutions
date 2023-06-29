@@ -1,5 +1,4 @@
-// LINK OF CHALLENGE:
-// https://www.hackerrank.com/challenges/2d-array/problem?isFullScreen=true&h_r=next-challenge&h_v=zen
+// LINK OF CHALLENGE: https://www.hackerrank.com/challenges/2d-array/problem?isFullScreen=true&h_r=next-challenge&h_v=zen
 
 
 // EXAMPLE ARRAYS
