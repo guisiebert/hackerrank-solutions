@@ -1,0 +1,36 @@
+function getMax(operations) {
+    let stack = [] 
+    let maxStack = []
+    let results = []
+    
+    for (let i = 0; i < operations.length; i++) {
+        const operation = operations[i].split(" ").map(Number);
+        
+        if (operation[0] === 1) {
+            // Push the element onto the main stack
+            stack.push(operation[1]);
+            
+            // Update the maxStack
+            if (maxStack.length === 0 || operation[1] >= maxStack[maxStack.length - 1]) {
+                maxStack.push(operation[1]);
+            }
+        } 
+        else if (operation[0] === 2) {
+            // Remove the top element from the main stack
+            const removed = stack.pop();
+            
+            // If the removed element is the current maximum, pop it from the maxStack as well
+            if (removed === maxStack[maxStack.length - 1]) {
+                maxStack.pop();
+            }
+        }
+        else if (operation[0] === 3) {
+            // The current maximum is on top of the maxStack. Push it to results.
+            if (maxStack.length > 0) {
+                results.push(maxStack[maxStack.length - 1]);
+            }
+        }
+    }
+    
+    return results;
+}
