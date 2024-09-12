@@ -1,0 +1,35 @@
+// Link of challenge: https://www.hackerrank.com/challenges/the-birthday-bar/problem?isFullScreen=true
+
+const case1 = {
+    arr: [1, 2, 1, 3, 2],
+    day: 3,
+    month: 2 
+}
+
+const case2 = {
+    arr: [4, 1, 4, 3, 3, 5, 1, 2, 4, 2, 5, 1, 5, 1, 4, 1, 3, 1, 5, 2, 2, 2, 1, 1, 3, 2, 5, 3, 1, 5, 4, 5, 2, 2, 1, 1, 2, 2, 4, 5, 4, 1, 5, 2, 1, 1, 2, 2, 1, 3, 2, 4, 4, 1, 3, 2, 2, 3, 1, 5, 4, 4, 1, 4, 2, 1, 2, 1, 5, 1, 3, 3, 4, 2, 1, 5, 5, 4, 2, 2, 3, 3, 4, 3, 1, 2, 1, 2, 4, 3],
+    day: 16, 
+    month: 7
+}
+
+
+function birthdayChocolate(s, d, m) {
+    let ways = 0;
+    
+    for (let i = 0; i < s.length; i++) {
+        let sum = 0
+        
+        for (let j = 0; j < m; j++) {
+            sum += s[i+j]
+        }
+        
+        if (sum == d) {
+            ways++
+        }
+    }
+
+    return ways;
+}
+
+console.log(birthdayChocolate(case1.arr, case1.day, case1.month)) // expects 2
+console.log(birthdayChocolate(case2.arr, case2.day, case2.month)) // expects 13
